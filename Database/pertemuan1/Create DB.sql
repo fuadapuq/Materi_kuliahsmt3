@@ -1,0 +1,2 @@
+/*membuat Data Base Baru*/
+CREATE DATABASE LATIHAN1db0007
