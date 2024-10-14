@@ -1,0 +1,16 @@
+.header-top{
+    list-style-type: none;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+    font-family: arial;
+    display: flex;
+}
+li {
+    color: white;
+}
+li a {
+    text-decoration: none;
+    color: white;
+}
