@@ -1,3 +1,52 @@
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #f8f8f8;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+
+        footer small {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        footer li {
+            display: block; /* Change to block to stack items vertically */
+            margin: 5px 0; /* Add margin for spacing */
+        }
+
+        footer img {
+            width: 30px; /* Set the size of the icons */
+            height: 30px; /* Set the size of the icons */
+        }
+    </style>
 footer{
     background-color: blue;
     color: black;
@@ -6,3 +55,15 @@ footer{
     padding: 10px;
     bottom: 0;
 }
+nav li {
+    list-style: none;
+    padding: 1em 0;
+  }
+   
+  nav li a {
+    color: white;
+    font-weight: 700;
+    opacity: 0.6;
+    text-decoration: none;
+    transition: 0.3s;
+  }
