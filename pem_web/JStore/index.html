@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Web Design Mastery | Sewa Gadget</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#" class="logo">
+            <img src="assets/1.png" alt="logo" class="logo-white" />
+            <img src="assets/1.png" alt="logo" class="logo-dark" />
+            <span>JSTORE</span>
+          </a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#deals">Rental Gadget</a></li>
+        <li><a href="#choose">Why Choose Us</a></li>
+        <li><a href="#client">Testimonials</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li class="nav-item">
+          <a class="nav-link mx-3" href="login.html">Login</a>
+        </li>
+      </ul>
+      <div class="nav__btns">
+        <a class="btn" href="daftar.html">Register</a>
+      </div>
+    </nav>
+    <div class="header__container" id="home">
+      <div class="header__image">
+        <img src="assets/3.png" alt="header" />
+      </div>
+      <div class="header__content">
+        <h2>👍 100% Trusted rental HP & Laptop rental platform di cirebon</h2>
+        <h1>MUDAH DAN CEPAT</h1>
+        <p class="section__description">
+          Temukan pengalaman sewa mobil yang lancar bersama kami.
+          Pilih dari beragam HP dan laptop yang sesuai dengan gaya dan kebutuhan Anda
+          Cepat, mudah, dan murah - sewa gadget anda disini!
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <section class="header__form">
+    <form action="/">
+      <div class="input__group">
+        <label for="location">Pengambilan & Pengembalian Lokasi</label>
+        <input type="text" name="location" id="location" placeholder="Cirebon, Indonesia" />
+      </div>
+      <div class="input__group">
+        <label for="start">Tanggal Pengambilan</label>
+        <input type="text" name="start" id="start" placeholder="Aug 16, 10:00 AM" />
+      </div>
+      <div class="input__group">
+        <label for="stop">Tanggal Pengembalian</label>
+        <input type="text" name="stop" id="stop" placeholder="Aug 18, 10:00 PM" />
+      </div>
+      <button class="btn">Search <i class="ri-search-line"></i></button>
+    </form>
+  </section>
+
+  <section class="section__container about__container" id="about">
+    <h2 class="section__header">Cara Kerja</h2>
+    <p class="section__description">
+      Menyewa gadget bersama kami sangatlah mudah! Pilih HP atau laptop Anda, pilih tanggal Anda,
+      dan selesaikan pemesanan Anda. Kami akan menangani sisanya, memastikan seuamnya berjalan mulus.
+    </p>
+    <div class="about__grid">
+      <div class="about__card">
+        <span><i class="ri-map-pin-2-fill"></i></span>
+        <h4>lokasi</h4>
+        <p>
+          Pilih dari berbagai lokasi penjemputan yang paling sesuai dengan kebutuhan Anda,
+          baik di dekat rumah, kantor, atau kampus.
+        </p>
+      </div>
+      <div class="about__card">
+        <span><i class="ri-calendar-event-fill"></i></span>
+        <h4>Pick-up Date</h4>
+        <p>
+          Pilih tanggal dan waktu yang tepat untuk pengambilan HP atau laptop Anda,
+          kami selalu menyediakan waktu yang siap saat Anda membutuhkannya.
+        </p>
+      </div>
+      <div class="about__card">
+        <span><i class="ri-roadster-fill"></i></span>
+        <h4>Pesan gadget anda</h4>
+        <p>
+          Selesaikan pemesanan Anda hanya dengan beberapa klik,
+          dan kami akan menyiapkan pesanan Anda.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="deals" id="deals">
+    <div class="section__container deals__container">
+      <h2 class="section__header">Most popular gadget rental deals</h2>
+      <p class="section__description">
+        Jelajahi penawaran persewaan gadget terbaik kami,
+        mulai dari HP hingga laptop yang sesuai dengan gaya dan kebutuhan Anda.
+      </p>
+      <div class="deals__tabs">
+        <button class="btn active" data-id="Tesla">Iphone</button>
+        <button class="btn" data-id="Mitsubishi">Samsung</button>
+        <button class="btn" data-id="Mazda">Laptop</button>
+      </div>
+      <div id="Tesla" class="tab__content active">
+        <div class="deals__card">
+          <img src="assets/ip16p.jpeg" alt="deals" />
+          <div class="deals__rating">
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-line"></i></span>
+            <span>(550)</span>
+          </div>
+          <h4>Iphone 16 pro</h4>
+          <div class="deals__card__grid">
+          </div>
+          <hr />
+          <div class="deals__card__footer">
+            <h3>6000rb<span>/Per Hari</span></h3>
+            <a href="#">
+              Rent Now
+              <span><i class="ri-arrow-right-line"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="deals__card">
+          <img src="assets/ip16.jpeg" alt="deals" />
+          <div class="deals__rating">
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-line"></i></span>
+            <span>(450)</span>
+          </div>
+          <h4>Iphone 16</h4>
+          <div class="deals__card__grid">
+          </div>
+          <hr />
+          <div class="deals__card__footer">
+            <h3>500rb<span>/Per hari</span></h3>
+            <a href="#">
+              Rent Now
+              <span><i class="ri-arrow-right-line"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="deals__card">
+          <img src="assets/ip15.jpg" alt="deals" />
+          <div class="deals__rating">
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-line"></i></span>
+            <span>(550)</span>
+          </div>
+          <h4>Iphone 15</h4>
+          <div class="deals__card__grid">
+          </div>
+          <hr />
+          <div class="deals__card__footer">
+            <h3>450rb<span>/Per Hari</span></h3>
+            <a href="#">
+              Rent Now
+              <span><i class="ri-arrow-right-line"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="Mitsubishi" class="tab__content">
+        <div class="deals__card">
+          <img src="assets/s24.jpg" alt="deals" />
+          <div class="deals__rating">
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-line"></i></span>
+            <span>(550)</span>
+          </div>
+          <h4>Samsung S24 Ultra</h4>
+          <div class="deals__card__grid">
+          </div>
+          <hr />
+          <div class="deals__card__footer">
+            <h3>5000rb<span>/Per Hari</span></h3>
+            <a href="#">
+              Rent Now
+              <span><i class="ri-arrow-right-line"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="deals__card">
+          <img src="assets/szflip.jpg" alt="deals" />
+          <div class="deals__rating">
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-line"></i></span>
+            <span>(500)</span>
+          </div>
+          <h4>Samsung Zfip</h4>
+          <div class="deals__card__grid">
+            <div>
+            </div>
+          </div>
+          <hr />
+          <div class="deals__card__footer">
+            <h3>400rb<span>/Per Hari</span></h3>
+            <a href="#">
+              Rent Now
+              <span><i class="ri-arrow-right-line"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="deals__card">
+          <img src="assets/zfold.png" alt="deals" />
+          <div class="deals__rating">
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-line"></i></span>
+            <span>(150)</span>
+          </div>
+          <h4>Samsung Zfold</h4>
+          <div class="deals__card__grid">
+            <div>
+            </div>
+          </div>
+          <hr />
+          <div class="deals__card__footer">
+            <h3>450rb<span>/Per Hari</span></h3>
+            <a href="#">
+              Rent Now
+              <span><i class="ri-arrow-right-line"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="Mazda" class="tab__content">
+        <div class="deals__card">
+          <img src="assets/msigl63.jpg" alt="deals" />
+          <div class="deals__rating">
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-line"></i></span>
+            <span>(200)</span>
+          </div>
+          <h4>MSI GL-63</h4>
+          <div class="deals__card__grid">
+            <div>
+            </div>
+          </div>
+          <hr />
+          <div class="deals__card__footer">
+            <h3>400rb<span>/Per Hari</span></h3>
+            <a href="#">
+              Rent Now
+              <span><i class="ri-arrow-right-line"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="deals__card">
+          <img src="assets/macbook.jpeg" alt="deals" />
+          <div class="deals__rating">
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-line"></i></span>
+            <span>(100)</span>
+          </div>
+          <h4>Macbook 14</h4>
+          <div class="deals__card__grid">
+            <div>
+            </div>
+          </div>
+          <hr />
+          <div class="deals__card__footer">
+            <h3>500rb<span>/Per Hari</span></h3>
+            <a href="#">
+              Rent Now
+              <span><i class="ri-arrow-right-line"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="deals__card">
+          <img src="assets/tufa17.jpg" alt="deals" />
+          <div class="deals__rating">
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-line"></i></span>
+            <span>(180)</span>
+          </div>
+          <h4>TUF Gaming A17</h4>
+          <div class="deals__card__grid">
+            <div>
+            </div>
+          </div>
+          <hr />
+          <div class="deals__card__footer">
+            <h3>300rb<span>/Per Hari</span></h3>
+            <a href="#">
+              Rent Now
+              <span><i class="ri-arrow-right-line"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- <div id="Toyota" class="tab__content">
+        <div class="deals__card">
+          <img src="assets/deals-10.png" alt="deals" />
+          <div class="deals__rating">
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-line"></i></span>
+            <span>(250)</span>
+          </div>
+          <h4>Corolla</h4>
+          <div class="deals__card__grid">
+            <div>
+              <span><i class="ri-group-line"></i></span> 4 People
+            </div>
+            <div>
+              <span><i class="ri-steering-2-line"></i></span> Manual
+            </div>
+            <div>
+              <span><i class="ri-speed-up-line"></i></span> 18km/l
+            </div>
+            <div>
+              <span><i class="ri-car-line"></i></span> Diesel
+            </div>
+          </div>
+          <hr />
+          <div class="deals__card__footer">
+            <h3>$180<span>/Per Day</span></h3>
+            <a href="#">
+              Rent Now
+              <span><i class="ri-arrow-right-line"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="deals__card">
+          <img src="assets/deals-11.png" alt="deals" />
+          <div class="deals__rating">
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-line"></i></span>
+            <span>(550)</span>
+          </div>
+          <h4>Innova</h4>
+          <div class="deals__card__grid">
+            <div>
+              <span><i class="ri-group-line"></i></span> 4 People
+            </div>
+            <div>
+              <span><i class="ri-steering-2-line"></i></span> Manual
+            </div>
+            <div>
+              <span><i class="ri-speed-up-line"></i></span> 18km/l
+            </div>
+            <div>
+              <span><i class="ri-car-line"></i></span> Diesel
+            </div>
+          </div>
+          <hr />
+          <div class="deals__card__footer">
+            <h3>$150<span>/Per Day</span></h3>
+            <a href="#">
+              Rent Now
+              <span><i class="ri-arrow-right-line"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="deals__card">
+          <img src="assets/deals-12.png" alt="deals" />
+          <div class="deals__rating">
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-line"></i></span>
+            <span>(180)</span>
+          </div>
+          <h4>Fortuner</h4>
+          <div class="deals__card__grid">
+            <div>
+              <span><i class="ri-group-line"></i></span> 4 People
+            </div>
+            <div>
+              <span><i class="ri-steering-2-line"></i></span> Manual
+            </div>
+            <div>
+              <span><i class="ri-speed-up-line"></i></span> 18km/l
+            </div>
+            <div>
+              <span><i class="ri-car-line"></i></span> Diesel
+            </div>
+          </div>
+          <hr />
+          <div class="deals__card__footer">
+            <h3>$190<span>/Per Day</span></h3>
+            <a href="#">
+              Rent Now
+              <span><i class="ri-arrow-right-line"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="Honda" class="tab__content">
+        <div class="deals__card">
+          <img src="assets/deals-13.png" alt="deals" />
+          <div class="deals__rating">
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-line"></i></span>
+            <span>(200)</span>
+          </div>
+          <h4>Amaze</h4>
+          <div class="deals__card__grid">
+            <div>
+              <span><i class="ri-group-line"></i></span> 4 People
+            </div>
+            <div>
+              <span><i class="ri-steering-2-line"></i></span> Manual
+            </div>
+            <div>
+              <span><i class="ri-speed-up-line"></i></span> 18km/l
+            </div>
+            <div>
+              <span><i class="ri-car-line"></i></span> Diesel
+            </div>
+          </div>
+          <hr />
+          <div class="deals__card__footer">
+            <h3>$100<span>/Per Day</span></h3>
+            <a href="#">
+              Rent Now
+              <span><i class="ri-arrow-right-line"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="deals__card">
+          <img src="assets/deals-14.png" alt="deals" />
+          <div class="deals__rating">
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-line"></i></span>
+            <span>(350)</span>
+          </div>
+          <h4>Elevate</h4>
+          <div class="deals__card__grid">
+            <div>
+              <span><i class="ri-group-line"></i></span> 4 People
+            </div>
+            <div>
+              <span><i class="ri-steering-2-line"></i></span> Manual
+            </div>
+            <div>
+              <span><i class="ri-speed-up-line"></i></span> 18km/l
+            </div>
+            <div>
+              <span><i class="ri-car-line"></i></span> Diesel
+            </div>
+          </div>
+          <hr />
+          <div class="deals__card__footer">
+            <h3>$120<span>/Per Day</span></h3>
+            <a href="#">
+              Rent Now
+              <span><i class="ri-arrow-right-line"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="deals__card">
+          <img src="assets/deals-15.png" alt="deals" />
+          <div class="deals__rating">
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-line"></i></span>
+            <span>(300)</span>
+          </div>
+          <h4>City</h4>
+          <div class="deals__card__grid">
+            <div>
+              <span><i class="ri-group-line"></i></span> 4 People
+            </div>
+            <div>
+              <span><i class="ri-steering-2-line"></i></span> Manual
+            </div>
+            <div>
+              <span><i class="ri-speed-up-line"></i></span> 18km/l
+            </div>
+            <div>
+              <span><i class="ri-car-line"></i></span> Diesel
+            </div>
+          </div>
+          <hr />
+          <div class="deals__card__footer">
+            <h3>$150<span>/Per Day</span></h3>
+            <a href="#">
+              Rent Now
+              <span><i class="ri-arrow-right-line"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+      <section class="choose__container" id="choose">
+        <div class="choose__image">
+          <img src="assets/3.png" alt="choose" />
+        </div>
+        <div class="choose__content">
+          <h2 class="section__header">Why choose us</h2>
+          <p class="section__description">
+            Temukan perbedaannya dengan layanan sewa gadget kami.
+            Kami menawarkan gadget yang andal, layanan pelanggan yang luar biasa
+            dan harga yang kompetitif untuk memastikan pengalaman sewa yang lancar.
+          </p>
+          <div class="choose__grid">
+            <div class="choose__card">
+              <span><i class="ri-customer-service-line"></i></span>
+              <div>
+                <h4>Customer Support</h4>
+                <p>Tim dukungan kami yang berdedikasi siap membantu Anda 24/7.</p>
+              </div>
+            </div>
+            <div class="choose__card">
+              <span><i class="ri-map-pin-line"></i></span>
+              <div>
+                <h4>lokasi</h4>
+                <p>
+                  Lokasi penjemputan dan pengantaran yang nyaman untuk memenuhi kebutuhan
+                  gadget Anda.
+                </p>
+              </div>
+            </div>
+            <div class="choose__card">
+              <span><i class="ri-wallet-line"></i></span>
+              <div>
+                <h4>Best Prices</h4>
+                <p>Nikmati harga murah untuk setiap penyewaan.</p>
+              </div>
+            </div>
+            <div class="choose__card">
+              <span><i class="ri-user-star-line"></i></span>
+              <div>
+                <h4>Experience</h4>
+                <p>Proses Mudah, Pengalaman Memuaskan.</p>
+              </div>
+            </div>
+            <div class="choose__card">
+              <span><i class="ri-verified-badge-line"></i></span>
+              <div>
+                <h4>Verified Brands</h4>
+                <p>Pilihlah merek gadget yang terpercaya dan terawat.</p>
+              </div>
+            </div>
+            <div class="choose__card">
+              <span><i class="ri-calendar-close-line"></i></span>
+              <div>
+                <h4>Free Cancellations</h4>
+                <p>Pemesanan fleksibel dengan opsi pembatalan gratis.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="subscribe__container">
+        <div class="subscribe__image">
+          <img src="assets/3.png" alt="subscribe" />
+        </div>
+        <div class="subscribe__content">
+          <h2 class="section__header">
+            Subscribe for the latest gadget rental updates
+          </h2>
+          <p class="section__description">
+            Stay in the know! Berlangganan untuk menerima penawaran sewa gadget terbaru,
+            penawaran eksklusif, dan pembaruan langsung ke kotak masuk Anda
+            Jangan lewatkan promosi spesial dan tambahan terbaru pada armada kami.
+          </p>
+          <form action="/">
+            <input type="text" placeholder="Your Email" />
+            <button class="btn">Subscribe</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="section__container client__container" id="client">
+        <h2 class="section__header">What people say about us?</h2>
+        <p class="section__description">
+          Temukan mengapa pelanggan kami senang menyewa bersama kami!
+          Baca ulasan dan testimoni nyata untuk melihat bagaimana kami memberikan layanan yang luar biasa.
+        </p>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="client__card">
+                <div class="client__details">
+                  <img src="assets/boy.jpeg" alt="client" />
+                  <div>
+                    <h4>Mas Boy</h4>
+                    <div class="client__rating">
+                      <span><i class="ri-star-fill"></i></span>
+                      <span><i class="ri-star-fill"></i></span>
+                      <span><i class="ri-star-fill"></i></span>
+                      <span><i class="ri-star-fill"></i></span>
+                      <span><i class="ri-star-line"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  Saya memiliki pengalaman yang luar biasa menyewa hp dari layanan ini.
+                  Proses pemesanan cepat dan mudah, dan dalam kondisi sempurna.
+                  Sangat direkomendasikan!
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client__card">
+                <div class="client__details">
+                  <img src="assets/abil.jpeg" alt="client" />
+                  <div>
+                    <h4>Bang Bil</h4>
+                    <div class="client__rating">
+                      <span><i class="ri-star-fill"></i></span>
+                      <span><i class="ri-star-fill"></i></span>
+                      <span><i class="ri-star-fill"></i></span>
+                      <span><i class="ri-star-fill"></i></span>
+                      <span><i class="ri-star-line"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  Customer service yang sangat luar biasa! Mereka membantu saya dengan semua pertanyaan saya,
+                  dan saya merasa yakin dengan pemesanan saya.
+                  Saya pasti akan menyewa dari mereka lagi.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client__card">
+                <div class="client__details">
+                  <img src="assets/capt.jpg" alt="client" />
+                  <div>
+                    <h4>Capt Dimas</h4>
+                    <div class="client__rating">
+                      <span><i class="ri-star-fill"></i></span>
+                      <span><i class="ri-star-fill"></i></span>
+                      <span><i class="ri-star-fill"></i></span>
+                      <span><i class="ri-star-fill"></i></span>
+                      <span><i class="ri-star-line"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  Saya sangat puas dengan layanan penyewaan HP di sini! Proses pemesanannya sangat mudah dan cepat.
+                  Saya menyewa HP untuk keperluan bisnis selama perjalanan dinas,
+                  dan HP yang saya terima dalam kondisi sangat baik, seperti baru.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="section__container footer__container">
+          <div class="footer__col">
+            <div class="footer__logo">
+              <a href="#" class="logo">
+                <img src="assets/1.png" alt="logo" />
+                <span>Rental Gadget</span>
+              </a>
+            </div>
+            <p>
+              Kami di sini untuk memberi Anda gadget terbaik dan pengalaman sewa yang lancar.
+              Tetap terhubung untuk pembaruan, penawaran khusus, dan banyak lagi.
+              Ayo sewa gadget sekarang!
+            </p>
+            <ul class="footer__socials">
+              <li>
+                <a href="#"><i class="ri-facebook-fill"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ri-twitter-fill"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ri-linkedin-fill"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ri-instagram-line"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ri-youtube-fill"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Our Services</h4>
+            <ul class="footer__links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#deals">Rental Deals</a></li>
+              <li><a href="#choose">Why Choose Us</a></li>
+              <li><a href="#client">Testimonials</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Gadget Model</h4>
+            <ul class="footer__links">
+              <li><a href="#">Iphone 16 pro</a></li>
+              <li><a href="#">Iphone 16</a></li>
+              <li><a href="#">Samsung s24 Ultra</a></li>
+              <li><a href="#">Macbook Pro</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Contact</h4>
+            <ul class="footer__links">
+              <li>
+                <a href="#">
+                  <span><i class="ri-phone-fill"></i></span> +62 812 2906 6007
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span><i class="ri-map-pin-fill"></i></span> Cirebon, Indonesia
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span><i class="ri-mail-fill"></i></span> fuazis34@gmail.com
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bar">
+          Copyright © 2024 Web Design Mastery. All rights reserved.
+        </div>
+      </footer>
+
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="main.js"></script>
+</body>
+
+</html>
