@@ -1,0 +1,53 @@
+<RentalFormWithDiscount>:
+    orientation: 'vertical'
+    padding: 10
+    spacing: 10
+
+    # Nama Lengkap
+    Label:
+        text: "Nama Lengkap:"
+    TextInput:
+        id: nama_input
+        hint_text: "Masukkan Nama Lengkap"
+        multiline: False
+
+    # Alamat Email
+    Label:
+        text: "Alamat Email:"
+    TextInput:
+        id: email_input
+        hint_text: "Masukkan Email"
+        multiline: False
+
+    # Pilih Gadget
+    Label:
+        text: "Pilih Gadget:"
+    Spinner:
+        id: gadget_spinner
+        text: "Pilih Gadget"
+        values: ["Laptop", "Smartphone"]
+
+    # Durasi Penyewaan
+    Label:
+        text: "Durasi Penyewaan (Hari):"
+    TextInput:
+        id: durasi_input
+        hint_text: "Masukkan Durasi (hari)"
+        multiline: False
+
+    # Discount Input
+    Label:
+        text: "Kode Diskon (Opsional):"
+    TextInput:
+        id: discount_input
+        hint_text: "Masukkan Kode Diskon"
+        multiline: False
+
+    # Buttons
+    Button:
+        text: "Kirim"
+        on_press: root.submit_form(self)
+
+    Button:
+        text: "Lihat Data"
+        on_press: root.show_rentals(self)
